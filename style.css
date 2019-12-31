@@ -91,6 +91,14 @@ box-shadow: 0 0 0 10px rgba(0,127,255,.15);
 padding: 20px 30px;
 border-radius: 10px;
 text-decoration: none;
+outline:none;
+border:none;
+cursor:pointer;
+}
+a.cta:active,
+button.cta:active{
+	opacity:.7;
+
 }
 a.cta.alt,
 button.cta.alt{
@@ -106,6 +114,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	position: sticky;
 	top:0;
+	z-index: 1;
 
 }
 nav ul{
@@ -148,20 +157,105 @@ nav ul li a{
 	display:inline;
 	font-weight: 800;
 }
+.sep{
+	width:470px;
+	height:10px;
+	background-color: #111111;
+	margin:70px auto;
+}
+.story h3{
+	font-size: 40px;
+	font-weight: 800;
+}
+.nb-list{
+	width:470px;
+	padding:20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float:left;
+	margin:0 20px 20px 0;
+	position: relative;
+}
+.nb-list li{
+	height:70px;
+	border-radius: 10px;
+	font-size:40px;
+	font-weight: bold;
+	color:white;
+	display:block;
+	margin-bottom: 20px;
+	padding:5px 20px;
+	box-sizing: border-box;
+	
+}
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.grey{background-color: rgba(0,0,0,.1);}
+.nb-list li.yellow{
+	background-color: #FFD400;
+	color:#111111;
+}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
 
+.nb-list li.dragging{
+	position:absolute;
+	top:70px;
+	left:70px;
+	right:-30px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,.3);
+
+}
+.nb-list li.dragging:after{
+	content: '';
+	display:block;
+	position:absolute;
+	width:54px;
+	height: 60px;
+	background: url(img/hand.png) no-repeat 0 0;
+	background-size: 100%;
+	bottom:-30px;
+	left:60%;
+}
+
+.gang-img{
+	display: block;
+	margin:0 auto;
+}
+footer{
+	text-align: center;
+	color:rgba(0,0,0,.4);
+	font-size:20px;
+	margin:85px 0 45px;
+	font-weight: bold;
+}
+
+footer a{
+	color: rgba(0,0,0,.4);
+}
+
+.popup{
+	display:none;
+}
 /* 
-<div class="herobanner">
-		<div class="wrapper">
-		<h4>Wesley from <a href="google.com">Google</a>presents</h4>		
-		<h1>The silliest &amp;<br>
-			and craziest gang <br>
-			out there	</h1>
-		<h3>Its Circle Guy, Hat guy &amp;
-			Red Guy. They're Besties!!</h3>
-		<a class="alt" href="#moreinfo">Read More</button>
-		</div>
-		<div class="charachter1"></div>
-		<div class="charachter2"></div>
-		<div class="charachter3"></div>
-	</div>	
+<div class="sep"></div>
+	<div class="story" id="story"></div>
+	<ul class="nb-list">
+		<li class="blue">Rock n Roll</li>
+		<li class="grey">&nbsp;</li>
+		<li class="yellow dragging"></div>Laughter</li>
+		<li class="red">Square Off</li>
+		<li class="pink">CircutiorsRoutes</li>
+		<li class="salmon">Triginometry</li>
+		<li class="blue">Rad Hats </li>
+		<li class="yellow">Being Silly</li>
+	</ul>
+	<h3>Left: Things we find important<br>
+	Below: Our Story</h3>
+	<p>Once upon a time there were shapes.THey were...</p>
+	<p>They decided to kick out the other shapes...</p>
+	<p>And so the 3 shaoes were</p>
+	<p>They even satrted making fun of...</p>
+	<div class="sep"></div>
  */
