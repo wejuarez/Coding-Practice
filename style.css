@@ -133,6 +133,21 @@ nav ul li a{
 .moreinfo {
 		text-align: center;
 }
+.moreinfo p{
+	margin: 18px 0 35px;
+}
+.moreinfo h2{
+	margin:50px 0 0;
+}
+
+.highlight{
+	background-color: #ffadf9;
+	color: #ff3300;
+	padding:5px 10px ;
+	line-height: 50px;
+	display:inline;
+	font-weight: 800;
+}
 
 /* 
 <div class="herobanner">
